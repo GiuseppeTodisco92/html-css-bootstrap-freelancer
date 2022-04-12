@@ -5,6 +5,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- /font awesome -->
+
         <!-- bootstrap  -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -13,20 +20,36 @@
         <!-- style css  -->
         <link rel="stylesheet" href="css/style.css">
         <!-- /style css  -->
+
+
         <title>css-bootstrap-freelancer</title>
     </head>
 
-    <body class="debug">
+    <body class="">
 
         <!-- intestazione pagina -->
-        <header class="row align-items-center text-center m-0">
-            <div class="col ">
-                lorem
-            </div>
-            <div class="col ">
-                <a href="#">lorem</a>
-                <a href="#">lorem</a>
-                <a href="#">lorem</a>
+        <!-- py sta per padding su asse y -->
+        <header class="bg-secondary-color py-4">
+            <div class="container">
+                <div class="row align-items-center ">
+                    <div class="col ">
+                        <div class="logo">
+                            start bootstrap
+                        </div>
+                    </div>
+                    <!-- !corretto  -->
+                    <div class="col ">
+                        <nav class="main-nav d-none d-sm-block">
+                            <ul>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">contact</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+
             </div>
 
         </header>
@@ -36,100 +59,137 @@
         <main>
 
             <!-- sezione hero  -->
-            <section class="hero">
-                <div class="container_custom text-center">
+            <section class="hero py-5">
+                <div class="container text-center">
                     <!-- immagine  -->
                     <div class="img_avatar">
                         <img class="avatar" src="img/avatar.svg" alt="">
                     </div>
-                    <!-- riga start bootstrap  -->
-                    <div class="row">
-                        <div class="col">lorem</div>
+                    <h1>start bootstrap</h1>
+                    <div class="star-line">
+                        <div class="line mx-2"></div>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="line mx-2"></div>
                     </div>
-                    <!-- riga stella  -->
-                    <div class="row">
-                        <div class="col">stella</div>
-                    </div>
-                    <!-- riga subtitle  -->
-                    <div class="row">
-                        <div class="col">subtitle</div>
-                    </div>
+                    <p>graphic artist - web designer - illustrator</p>
                 </div>
             </section>
             <!-- /sezione hero  -->
 
             <!-- sezione portfolio  -->
-            <section class="portfolio container text-center">
-
-                <div class="row">
-                    <div class="col ">
-                        <h1>porfolio</h1>
-                    </div>
+            <section class="portfolio container text-center py-5">
+                <h2>portfolio</h2>
+                <div class="star-line">
+                    <div class="line-grey mx-2 style_line"></div>
+                    <i class="fa-solid fa-star"></i>
+                    <div class="line-grey mx-2"></div>
                 </div>
+                <div class="overflow-hidden">
+                    <div class="row gy-3 py-5">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="img_box">
+                                <img class="img-fluid" src="img/cabin.png" alt="">
+                                <div class="hover">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
 
-                <div class="row">
-                    <div class="col">
-                        stella
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="box_img">img</div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="box_img">img</div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="box_img">img</div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="box_img">img</div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="box_img">img</div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="box_img">img</div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="img_box">
+                                <img class="img-fluid" src="img/cake.png" alt="">
+                                <div class="hover">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="img_box">
+                                <img class="img-fluid" src="img/circus.png" alt="">
+                                <div class="hover">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="img_box">
+                                <img class="img-fluid" src="img/game.png" alt="">
+                                <div class="hover">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="img_box">
+                                <img class="img-fluid" src="img/safe.png" alt="">
+                                <div class="hover">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="img_box">
+                                <img class="img-fluid" src="img/submarine.png" alt="">
+                                <div class="hover">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </section>
             <!-- /sezione portfolio  -->
 
-            <section class="about text-center">
+            <section class="about text-center py-5">
 
                 <div class="container_custom ">
-                    <div class="row">
-                        <div class="col ">
-                            <h1>about</h1>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col ">
+                                <h1>about</h1>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col">
-                            stella
+                        <div class="row">
+                            <div class="col">
+                                stella
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-12 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Facere
-                            iusto,
-                            fuga
-                            ipsum saepe similique veritatis mollitia neque ullam maxime deleniti nesciunt amet itaque
-                            minima
-                            ex culpa in, vel doloremque? Commodi.</div>
-                        <div class="col-lg-6 col-sm-12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
-                            iusto,
-                            fuga
-                            ipsum saepe similique veritatis mollitia neque ullam maxime deleniti nesciunt amet itaque
-                            minima
-                            ex culpa in, vel doloremque? Commodi.</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <button>download</button>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12 text-start py-2">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing
+                                elit.
+                                Facere
+                                iusto,
+                                fuga
+                                ipsum saepe similique veritatis mollitia neque ullam maxime deleniti nesciunt amet
+                                itaque
+                                minima
+                                ex culpa in, vel doloremque? Commodi.</div>
+                            <div class="col-lg-6 col-sm-12 text-start py-2">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing
+                                elit. Facere
+                                iusto,
+                                fuga
+                                ipsum saepe similique veritatis mollitia neque ullam maxime deleniti nesciunt amet
+                                itaque
+                                minima
+                                ex culpa in, vel doloremque? Commodi.</div>
                         </div>
+
+                        <button>download</button>
                     </div>
 
                 </div>
@@ -139,44 +199,37 @@
             </section>
 
             <!-- sezione contatti  -->
-            <section class="contact">
+            <section class="contact py-5">
 
                 <div class="container_custom ">
-                    <div class="row text-center">
-                        <div class="col ">
-                            <h1>contact me</h1>
-                        </div>
+                    <div class="container-fluid">
+                        <h1 class="text-center">contact me</h1>
+
+                        <!-- form  -->
+                        <form>
+                            <div class="border_bottom mb-3">
+                                <input type="email" class="form_style form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Name">
+                            </div>
+                            <div class="border_bottom mb-3">
+                                <input type="password" class="form_style form-control" id="exampleInputPassword1"
+                                    placeholder="Email Address">
+                            </div>
+                            <div class="border_bottom mb-3">
+                                <input type="text" class="form_style form-control" id="exampleInputPassword1"
+                                    placeholder="Phone Number">
+                            </div>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Message"></textarea>
+
+                            <div class="py-2">
+                                <button type="submit" class="btn ">Send</button>
+                            </div>
+
+                        </form>
+                        <!-- /form  -->
+
                     </div>
-
-                    <div class="row text-center">
-                        <div class="col">
-                            stella
-                        </div>
-                    </div>
-
-                    <!-- form  -->
-                    <form action="">
-
-                        <input class="form-control" type="text" placeholder="Name" aria-label="default input example">
-                        <input class="form-control" type="email" placeholder="Email Address"
-                            aria-label="default input example">
-                        <input class="form-control" type="text" placeholder="Phone Number"
-                            aria-label="default input example">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-
-
-
-                    </form>
-                    <!-- /form  -->
-
-
-
-                    <div class="row">
-                        <div class="col">
-                            <button type="submit">Send</button>
-                        </div>
-                    </div>
-
                 </div>
                 <!-- /container_custom  -->
             </section>
@@ -213,6 +266,9 @@
         <!-- /footer pagina  -->
 
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
 
     </body>
 
